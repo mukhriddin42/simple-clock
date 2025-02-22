@@ -201,3 +201,224 @@
     top: 60px;
     left: 120px;
 }
+
+
+/* Resposive design */
+@media  (max-width: 1280px) {
+    .clock-section .status {
+        top: 15px;
+        background-color: green;
+    }
+
+    .clock {
+        top: 55%;
+        left: 50%;
+        width: 450px;
+        height: 450px;
+    }
+
+    .clock .central-dot::after {
+        height: 4px;
+        width: 155px;
+    }
+    
+    .clock .minute-line {
+        width: 130px;
+    }
+    
+    .clock .hour-line {
+        width: 100px;
+    }
+
+    .clock .pragraph {
+        top: 145px;
+        font-size: 12px;
+    }
+
+
+        
+    .clock .number:nth-child(12) {
+        position: absolute;
+        top: 25px;
+    }
+
+    .clock .number:nth-child(1) {
+        position: absolute;
+        top: 50px;
+        right: 110px;
+    }
+
+    .clock .number:nth-child(2) {
+        position: absolute;
+        top: 110px;
+        right: 50px;
+    }
+
+    .clock .number:nth-child(3) {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 25px;
+    }
+
+    .clock .number:nth-child(4) {
+        position: absolute;
+        bottom: 110px;
+        right: 50px;
+    }
+
+    .clock .number:nth-child(5) {
+        position: absolute;
+        bottom: 50px;
+        right: 110px;
+    }
+
+    .clock .number:nth-child(6) {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 25px;
+    }
+
+    .clock .number:nth-child(7) {
+        position: absolute;
+        bottom: 50px;
+        left: 110px;
+    }
+
+    .clock .number:nth-child(8) {
+        position: absolute;
+        bottom: 115px;
+        left: 50px;
+    }
+
+    .clock .number:nth-child(9) {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 25px;
+    }
+
+    .clock .number:nth-child(10) {
+        position: absolute;
+        top: 115px;
+        left: 50px;
+    }
+
+    .clock .number:nth-child(11) {
+        position: absolute;
+        top: 50px;
+        left: 110px;
+    }
+}
+
+
+@media  (max-width: 768px) {
+    .clock-section .status {
+        top: 20px;
+        background-color: yellow;
+    }
+
+    .clock {
+        top: 55%;
+        left: 50%;
+        width: 400px;
+        height: 400px;
+    }
+
+
+    .clock .central-dot::after {
+        height: 4px;
+        width: 135px;
+    }
+    
+    .clock .minute-line {
+        width: 100px;
+    }
+    
+    .clock .hour-line {
+        width: 90px;
+    }
+
+    .clock .pragraph {
+        top: 130px;
+        font-size: 10px;
+    }
+
+
+        
+    .clock .number:nth-child(12) {
+        position: absolute;
+        top: 25px;
+    }
+
+    .clock .number:nth-child(1) {
+        position: absolute;
+        top: 50px;
+        right: 100px;
+    }
+
+    .clock .number:nth-child(2) {
+        position: absolute;
+        top: 100px;
+        right: 50px;
+    }
+
+    .clock .number:nth-child(3) {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 25px;
+    }
+
+    .clock .number:nth-child(4) {
+        position: absolute;
+        bottom: 100px;
+        right: 50px;
+    }
+
+    .clock .number:nth-child(5) {
+        position: absolute;
+        bottom: 50px;
+        right: 100px;
+    }
+
+    .clock .number:nth-child(6) {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 25px;
+    }
+
+    .clock .number:nth-child(7) {
+        position: absolute;
+        bottom: 50px;
+        left: 100px;
+    }
+
+    .clock .number:nth-child(8) {
+        position: absolute;
+        bottom: 100px;
+        left: 50px;
+    }
+
+    .clock .number:nth-child(9) {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 25px;
+    }
+
+    .clock .number:nth-child(10) {
+        position: absolute;
+        top: 100px;
+        left: 40px;
+    }
+
+    .clock .number:nth-child(11) {
+        position: absolute;
+        top: 45px;
+        left: 100px;
+    }
+    
+}
