@@ -40,7 +40,28 @@
     transform: translateX(-50%);
     top: 50px;
     text-align: center;
-    color: #FFCF50;
+    color: white;
+    background-color: red;
+    padding: 5px 10px;
+    font-family: 'EB Garamond';
+    letter-spacing: 1px;
+    animation-name: burnOut;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ;
+}
+
+@keyframes burnOut {
+    0% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+
 }
 
 .clock .number {

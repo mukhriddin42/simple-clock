@@ -28,3 +28,5 @@ const sekundLine = setInterval(() => {
     minute.style.rotate = `${minuteCounter}deg`;
     hour.style.rotate = `${hourCounter}deg`;
 }, 1000);
+
+
