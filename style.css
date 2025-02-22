@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.clock-section {
+    max-width: 100%;
+    height: 100vh;
+    /* background-color: #B5CFB7; */
+    background-color: #697565;
+    position: relative;
+}
+
+.clock {
+    background-color: #EFE9D5;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 23px solid #143D60;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 68px -1px rgba(0,0,0,0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock-section .status {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50px;
+    text-align: center;
+    color: #FFCF50;
+}
+
+.clock .number {
+    font-size: 28px;
+    font-weight: 600;
+    font-family: Lobster;
+}
+
+.clock .pragraph {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 175px;
+    font-family: 'Press Start 2P' ;
+    font-size: 14px;
+    color: #16C47F;
+    background-color: #1B1833;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.clock .central-dot {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 30;
+}
+
+.clock .central-dot::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 180px;
+    background-color: red;
+    z-index: -1;
+}
+
+.clock .minute-line {
+    position: absolute;
+    width: 150px;
+    height: 6px;
+    transform: translateX(38%);
+    background-color:black;
+    z-index: 10;
+}
+
+.clock .hour-line {
+    position: absolute;
+    width: 110px;
+    height: 8px;
+    transform: translateX(35%);
+    background-color:black;
+    rotate: 0deg;
+
+}
+.clock .number:nth-child(12),
+.clock .number:nth-child(3),
+.clock .number:nth-child(6),
+.clock .number:nth-child(9) {
+    font-size: 32px;
+}
+.clock .number:nth-child(12) {
+    position: absolute;
+    top: 30px;
+}
+
+.clock .number:nth-child(1) {
+    position: absolute;
+    top: 60px;
+    right: 120px;
+}
+
+.clock .number:nth-child(2) {
+    position: absolute;
+    top: 125px;
+    right: 60px;
+}
+
+.clock .number:nth-child(3) {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30px;
+}
+
+.clock .number:nth-child(4) {
+    position: absolute;
+    bottom: 125px;
+    right: 60px;
+}
+
+.clock .number:nth-child(5) {
+    position: absolute;
+    bottom: 60px;
+    right: 120px;
+}
+
+.clock .number:nth-child(6) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+}
+
+.clock .number:nth-child(7) {
+    position: absolute;
+    bottom: 60px;
+    left: 120px;
+}
+
+.clock .number:nth-child(8) {
+    position: absolute;
+    bottom: 125px;
+    left: 60px;
+}
+
+.clock .number:nth-child(9) {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 30px;
+}
+
+.clock .number:nth-child(10) {
+    position: absolute;
+    top: 125px;
+    left: 60px;
+}
+
+.clock .number:nth-child(11) {
+    position: absolute;
+    top: 60px;
+    left: 120px;
+}
